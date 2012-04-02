@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxBvh.h"
+#include "ofxMetaballs.h"
 
 class testApp : public ofBaseApp{
 
@@ -26,4 +27,11 @@ class testApp : public ofBaseApp{
 	float rotate;
 	
 	float play_rate, play_rate_t;
+	
+	ofEasyCam cam;
+	MarchingTetrahedrons mt;
+	ofLight light;
+	ofFbo fbo;
+	ofImage fills;
+	ofShader shader;
 };

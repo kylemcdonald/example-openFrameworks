@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2751A2881529092500077348 /* MarchingCubes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2751A2831529092500077348 /* MarchingCubes.cpp */; };
+		2751A2891529092500077348 /* MarchingTetrahedrons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2751A2851529092500077348 /* MarchingTetrahedrons.cpp */; };
 		60EF067F1517A53600FC5D12 /* ofxBvh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60EF067A1517A53600FC5D12 /* ofxBvh.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
-		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E4328149138ABC9F0047C5CB /* openFrameworks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworks.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
 		E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */; };
@@ -58,6 +60,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2751A2831529092500077348 /* MarchingCubes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MarchingCubes.cpp; path = ../../../addons/ofxMetaballs/src/MarchingCubes.cpp; sourceTree = SOURCE_ROOT; };
+		2751A2841529092500077348 /* MarchingCubes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarchingCubes.h; path = ../../../addons/ofxMetaballs/src/MarchingCubes.h; sourceTree = SOURCE_ROOT; };
+		2751A2851529092500077348 /* MarchingTetrahedrons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MarchingTetrahedrons.cpp; path = ../../../addons/ofxMetaballs/src/MarchingTetrahedrons.cpp; sourceTree = SOURCE_ROOT; };
+		2751A2861529092500077348 /* MarchingTetrahedrons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarchingTetrahedrons.h; path = ../../../addons/ofxMetaballs/src/MarchingTetrahedrons.h; sourceTree = SOURCE_ROOT; };
+		2751A2871529092500077348 /* ofxMetaballs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxMetaballs.h; path = ../../../addons/ofxMetaballs/src/ofxMetaballs.h; sourceTree = SOURCE_ROOT; };
 		60EF067A1517A53600FC5D12 /* ofxBvh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxBvh.cpp; sourceTree = "<group>"; };
 		60EF067B1517A53600FC5D12 /* ofxBvh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBvh.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
@@ -89,7 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */,
-				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+				E4328149138ABC9F0047C5CB /* openFrameworks.a in Frameworks */,
 				E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */,
 				E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */,
 				E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */,
@@ -108,6 +115,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2751A2741529091800077348 /* ofxMetaballs */ = {
+			isa = PBXGroup;
+			children = (
+				2751A2821529092500077348 /* src */,
+			);
+			name = ofxMetaballs;
+			sourceTree = "<group>";
+		};
+		2751A2821529092500077348 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2751A2831529092500077348 /* MarchingCubes.cpp */,
+				2751A2841529092500077348 /* MarchingCubes.h */,
+				2751A2851529092500077348 /* MarchingTetrahedrons.cpp */,
+				2751A2861529092500077348 /* MarchingTetrahedrons.h */,
+				2751A2871529092500077348 /* ofxMetaballs.h */,
+			);
+			name = src;
+			path = ../../../addons/ofxMetaballs/src;
+			sourceTree = SOURCE_ROOT;
+		};
 		60EF064A1517A53600FC5D12 /* ofxBvh */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +157,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				2751A2741529091800077348 /* ofxMetaballs */,
 				60EF064A1517A53600FC5D12 /* ofxBvh */,
 			);
 			name = addons;
@@ -164,7 +193,7 @@
 		E4328144138ABC890047C5CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+				E4328148138ABC890047C5CB /* openFrameworks.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,7 +268,6 @@
 			isa = PBXProject;
 			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example-sync-sound" */;
 			compatibilityVersion = "Xcode 2.4";
-			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				English,
@@ -264,10 +292,10 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+		E4328148138ABC890047C5CB /* openFrameworks.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = openFrameworksDebug.a;
+			path = openFrameworks.a;
 			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -297,6 +325,8 @@
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */,
 				60EF067F1517A53600FC5D12 /* ofxBvh.cpp in Sources */,
+				2751A2881529092500077348 /* MarchingCubes.cpp in Sources */,
+				2751A2891529092500077348 /* MarchingTetrahedrons.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
